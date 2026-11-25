@@ -65,10 +65,13 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 #oyn-bf2 .now{display:flex;justify-content:center;align-items:baseline;gap:8px;color:var(--or-ink);font-weight:700;line-height:1;margin-top:2px}
 #oyn-bf2 .now b{font-size:64px;letter-spacing:-2px}
 #oyn-bf2 .now span{font-size:22px}
-#oyn-bf2 .hero .pricebox{display:flex;flex-direction:column;align-items:center;gap:2px}
+#oyn-bf2 .hero .pricebox{display:flex;flex-direction:column;align-items:center;gap:2px;position:relative;max-width:248px;border:2px solid var(--ol)}
+#oyn-bf2 .hero .pricebox::before{content:"";position:absolute;inset:-2px;background:var(--ol);border-radius:inherit;transform:rotate(-4deg);z-index:-1}
+#oyn-bf2 .hero .w{position:relative;z-index:0}
+#oyn-bf2 .hero .per{color:var(--ol-ink)}
 #oyn-bf2 .hero .pricebox .now{margin:0}
 #oyn-bf2 .per{font-weight:700;font-size:16px;line-height:1.3;flex-basis:100%}
-#oyn-bf2 .keep{background:rgba(172,161,71,.16);color:var(--tx);font-weight:700;border-radius:12px;padding:11px 14px;margin:14px auto 0;font-size:16px;line-height:1.35;max-width:440px}
+#oyn-bf2 .keep{background:rgba(172,161,71,.30);color:var(--tx);font-weight:700;border-radius:12px;padding:11px 14px;margin:14px auto 0;font-size:16px;line-height:1.35;max-width:440px}
 #oyn-bf2 .hero .keep{margin-top:12px;padding:6px 12px;font-size:15px}
 #oyn-bf2 .dl{font-weight:700;font-size:15px;line-height:1.35;margin:8px auto 0;max-width:520px}
 #oyn-bf2 .cupos{display:block;color:var(--or-ink);font-weight:700;margin:16px 0 0;font-size:17px;letter-spacing:.2px}
@@ -181,7 +184,7 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 #oyn-bf2 .hero{padding-top:10px}
 #oyn-bf2 .badge{margin-bottom:12px}
 #oyn-bf2 .lead{font-size:15px;margin-top:10px}
-#oyn-bf2 .hero .pricebox{margin-top:18px;padding:12px 16px 10px}
+#oyn-bf2 .hero .pricebox{margin-top:22px;padding:12px 16px 10px}
 #oyn-bf2 .hero .now b{font-size:48px}#oyn-bf2 .hero .now span{font-size:17px}#oyn-bf2 .hero .was{font-size:15px}#oyn-bf2 .hero .per{font-size:14px}
 #oyn-bf2 .hero .keep{margin-top:14px;padding:8px 12px;font-size:14px}
 #oyn-bf2 .dl{font-size:14px;margin-top:12px}
@@ -201,7 +204,7 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 #oyn-bf2 .gar h2{grid-column:2;margin:0}
 #oyn-bf2 .gar p{grid-column:1 / -1;margin-top:12px}
 #oyn-bf2 .seal{width:96px;height:96px}#oyn-bf2 .seal b{font-size:38px}#oyn-bf2 .seal small{font-size:10px}
-#oyn-bf2 .hero.cmp .pricebox{margin-top:12px;padding:8px 16px 6px}#oyn-bf2 .hero.cmp .keep{margin-top:10px;padding:6px 12px}#oyn-bf2 .hero.cmp .lead{margin-top:8px}#oyn-bf2 .hero.cmp .dl{margin-top:8px}#oyn-bf2 .hero.cmp .oyn-cta{margin-top:14px}
+#oyn-bf2 .hero.cmp .pricebox{margin-top:16px;padding:8px 16px 6px;max-width:268px}#oyn-bf2 .hero.cmp .keep{margin-top:10px;padding:6px 12px}#oyn-bf2 .hero.cmp .lead{margin-top:8px}#oyn-bf2 .hero.cmp .dl{margin-top:8px}#oyn-bf2 .hero.cmp .oyn-cta{margin-top:14px}
 #oyn-bf2 .bar{display:block;position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#fff;border-top:2px solid var(--tx);padding:6px 12px calc(8px + env(safe-area-inset-bottom));transform:translateY(110%);visibility:hidden;transition:transform .25s,visibility .25s}
 #oyn-bf2 .bar.on{transform:none;visibility:visible}
 #oyn-bf2 .bcd{font-size:13px;font-weight:700;text-align:center;line-height:1.3;color:var(--tx);font-variant-numeric:tabular-nums}
@@ -242,7 +245,7 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 
 <section class="hero cmp" id="oyn-bf2-hero"><div class="w n">
 <span class="badge px">ÚLTIMA OPORTUNIDAD DE BLACK <span style="white-space:nowrap">FRIDAY 🐶✨</span></span>
-<h1 class="px">Entra al CLUB por solo <em>$13 USD al mes</em></h1>
+<h1 class="px"><span style="white-space:nowrap">Entra al CLUB</span><br>por solo<br><em style="white-space:nowrap">$13 USD al mes</em></h1>
 <p class="lead px">El precio mensual normal es de $19 USD, pero solo hasta este domingo puedes entrar por:</p>
 <div class="pricebox px"><span class="sr">Precio normal:</span><div class="was">$19 USD al mes</div><div class="now"><b>$13</b><span>USD al mes</span></div></div>
 <div class="keep px">Y mientras mantengas activa tu membresía, ese valor de $13 USD se mantiene ❤️</div>
@@ -337,7 +340,6 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 <section class="s du px"><div class="w">
 <div class="plan">
 <h2 class="rib">BENEFICIO ESPECIAL DE ESTE FIN DE SEMANA ✨</h2>
-<p class="imp">🚨 <b>IMPORTANTE:</b> Si compraras por separado todas las clases y guías que hoy están dentro del Club, su valor supera los <b>$1.200&nbsp;USD</b>.</p>
 <p>El precio mensual normal del CLUB es:</p>
 <div class="was">$19 USD al mes</div>
 <p>Solo hasta este domingo puedes entrar por:</p>
@@ -406,7 +408,7 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 <p class="fine">La membresía se renueva automáticamente cada mes por $13 USD. Mientras mantengas activa tu membresía, conservas ese valor. Puedes cancelar cuando quieras. Tienes 7 días de garantía.</p>
 </div></section>
 
-<footer class="foot"><p>© 2026 Orejas y Narices. Todos los derechos reservados.</p></footer>
+<footer class="foot"><p>© 2026 Orejas y Narices</p></footer>
 
 <div class="bar px" data-bar>
 <div class="bcd">La oferta termina en <b data-u="d">--</b>d <b data-u="h">--</b>h <b data-u="m">--</b>m <b data-u="s">--</b>s</div>
