@@ -55,7 +55,8 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 /* hero (el orden del DOM es el del copy; no se reordena con CSS) */
 #oyn-bf2 .hero{background:linear-gradient(180deg,var(--cr) 0,var(--du) 100%);padding:14px 0 44px;text-align:center}
 #oyn-bf2 .hero .w{display:flex;flex-direction:column;align-items:center}
-#oyn-bf2 .badge{display:inline-block;background:#fff;color:var(--or-ink);border:2px solid var(--or);font-weight:700;font-size:12px;letter-spacing:.2px;line-height:1.3;padding:7px 12px;border-radius:var(--r-pill);margin-bottom:12px;max-width:100%}
+/* etiqueta superior: trazo de marcador (no recuadro: no debe parecer botón) */
+#oyn-bf2 .badge{display:inline-block;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 30' preserveAspectRatio='none'%3E%3Cpath d='M4 8c40-5 120-6 192-2l-2 9 3 9c-64 4-130 4-193 1l2-9z' fill='%23F9CFAE'/%3E%3C/svg%3E") center/100% 100% no-repeat;color:var(--tx);font-weight:700;font-size:13px;letter-spacing:.4px;line-height:1.3;padding:6px 14px;margin-bottom:14px;max-width:100%;transform:rotate(-1.5deg)}
 #oyn-bf2 h1{font-size:var(--fs-h1);line-height:1.12;font-weight:700;margin-bottom:10px;text-wrap:balance}
 #oyn-bf2 h1 em{font-style:normal;color:var(--or-ink);background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 10' preserveAspectRatio='none'%3E%3Cpath d='M3 7c18-5 34-5 52-2s36 3 62-3' fill='none' stroke='%23DB6A2B' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") left bottom/100% .22em no-repeat;padding-bottom:.08em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 #oyn-bf2 .lead{font-size:16px;line-height:1.45;max-width:560px;margin:8px auto 0}
@@ -209,7 +210,7 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 }
 @media (max-width:380px){
 #oyn-bf2 h1{font-size:30px}
-#oyn-bf2 .badge{font-size:11px;padding:6px 10px}
+#oyn-bf2 .badge{font-size:11.5px;letter-spacing:.2px;padding:5px 10px}
 #oyn-bf2 .hero .now b{font-size:44px}#oyn-bf2 .top img{width:90px;height:61px}#oyn-bf2 .lead{font-size:14px}#oyn-bf2 .hero .cdn b{font-size:21px}#oyn-bf2 .hero .keep{padding:4px 8px;margin-top:8px}#oyn-bf2 .dl,#oyn-bf2 .hero .cd{margin-top:4px}#oyn-bf2 .hero .oyn-cta{margin-top:8px}
 #oyn-bf2 .cupos{margin-top:12px;font-size:16px}
 }
@@ -240,7 +241,7 @@ font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,san
 <div class="top"><img src="/img/0f4bdd1098ac.webp" srcset="/img/0f4bdd1098ac.webp 266w, /img/ee54d2c68761.webp 460w" sizes="(min-width:760px) 170px, 104px" width="230" height="156" fetchpriority="high" decoding="async" alt="Club Orejas y Narices: alimentación natural y bienestar canino integral"></div>
 
 <section class="hero cmp" id="oyn-bf2-hero"><div class="w n">
-<span class="badge px">ÚLTIMA OPORTUNIDAD DE BLACK FRIDAY 🐶✨</span>
+<span class="badge px">ÚLTIMA OPORTUNIDAD DE BLACK <span style="white-space:nowrap">FRIDAY 🐶✨</span></span>
 <h1 class="px">Entra al CLUB por solo <em>$13 USD al mes</em></h1>
 <p class="lead px">El precio mensual normal es de $19 USD, pero solo hasta este domingo puedes entrar por:</p>
 <div class="pricebox px"><span class="sr">Precio normal:</span><div class="was">$19 USD al mes</div><div class="now"><b>$13</b><span>USD al mes</span></div></div>
